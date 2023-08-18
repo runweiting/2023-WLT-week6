@@ -1,4 +1,11 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+* {
+  outline: 1px solid yellowgreen;
+}
+/*--------------------------------*/
+
+input[type='search'] {
+  &::placeholder {
+    font-size: $font-size-base;
+    color: #878787;
+  }
 }
