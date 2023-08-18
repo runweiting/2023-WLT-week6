@@ -9,7 +9,57 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+    <!------- 包含字幕的Carousel ------->
+    <div id="carouselExampleCaptions" class="carousel slide container-fluid" data-bs-ride="carousel">
+      <h3 class="display-4 text-white">19 MAY 2023</h3>
+      <!------- 輪播圖片組 ------->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/images/event/13.jpg" class="d-block w-100" alt="event-13">
+          <div class="carousel-caption d-none d-md-block bottom-0">
+            <h6 class="fs-4 fw-bold mb-3">隔牆有耳-沒有草東的派對</h6>
+            <p class="mb-4">你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
+              帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/images/event/01.jpg" class="d-block w-100" alt="event-1">
+          <div class="carousel-caption d-none d-md-block bottom-0">
+            <h6 class="fs-4 fw-bold mb-3">邪典電影派對——房間</h6>
+            <p class="mb-4">你有聽說過「大災難家」裡面的主角 Tommy Wiseau 製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/images/event/02.jpg" class="d-block w-100" style="object-position: top;" alt="event-2">
+          <div class="carousel-caption d-none d-md-block bottom-0">
+            <h6 class="fs-4 fw-bold mb-3">怪舞俱樂部</h6>
+            <p class="mb-4">覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的...</p>
+          </div>
+        </div>
+      </div>
+      <!------- 上下頁控制按鈕 ------->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
+    <div class="container-fluid p-4 text-white">
+      <div class="banner">
+        
+        <div>
+          <h6 class="fw-bold">隔牆有耳-沒有草東的派對</h6>
+          <p>你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！ 帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</p>
+        </div>
+      </div>
+    </div>
 
     <div class="card" style="width: 18rem">
       <div class="card-body">

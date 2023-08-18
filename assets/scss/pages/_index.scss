@@ -1,3 +1,18 @@
-.index-title {
-  font-size: 100px;
+/* ----- carousel調整 ----- */
+.carousel {
+    position: relative;
+    z-index: 1;
+}
+.carousel h3 {
+    position: absolute;
+    top: 48px;
+    left: 60px;
+    z-index: 5;
+}
+.carousel-item {
+    height: 518px;
+    object-fit: cover;
+}
+.bottom-0 {
+    bottom: 0;
 }

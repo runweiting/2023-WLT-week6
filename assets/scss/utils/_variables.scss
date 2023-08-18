@@ -374,11 +374,12 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25, // 4px
+  2: $spacer * .5,  // 8px
+  3: $spacer,       // 16px
+  4: $spacer * 1.5, // 24px
+  5: $spacer * 2,   // 32px
+  6: $spacer * 3    // 48px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -608,7 +609,7 @@ $display-font-sizes: (
 
 $display-font-family: null !default;
 $display-font-style:  null !default;
-$display-font-weight: 300 !default;
+$display-font-weight: 400 !default;
 $display-line-height: $headings-line-height !default;
 // scss-docs-end display-headings
 
@@ -1551,7 +1552,7 @@ $carousel-indicator-transition:      opacity .6s ease !default;
 
 $carousel-caption-width:             70% !default;
 $carousel-caption-color:             $white !default;
-$carousel-caption-padding-y:         1.25rem !default;
+$carousel-caption-padding-y:         0 !default;
 $carousel-caption-spacer:            1.25rem !default;
 
 $carousel-control-icon-width:        2rem !default;
