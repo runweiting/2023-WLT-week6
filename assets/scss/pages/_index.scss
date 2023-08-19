@@ -5,12 +5,6 @@
         width: 40px;
     }
 }
-// 為什麼.d-sm-block 吃不到？
-.navbar-brand .d-sm-block {
-    @media (min-width: 576px) {
-        display: block !important;
-    }
-}
 
 /* ----- form ----- */
 .navbar .form-control {
