@@ -14,7 +14,7 @@
     }
 }
 
-/* ----- carousel ----- */
+/* ----- 輪播carousel ----- */
 .carousel {
     position: relative;
     z-index: 1;
@@ -54,4 +54,9 @@
 }
 .bottom-0 {
     bottom: 0;
+}
+
+/* ----- 活動卡片card ----- */
+.card .imgBox {
+    height: 255px;
 }
