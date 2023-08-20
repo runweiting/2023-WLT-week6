@@ -83,14 +83,21 @@
     border-left: 4px solid $info;
 }
 
-/* ----- swiper ----- */
-/* -- Q.為什麼會停下來無法持續輪播？ -- */
-.swiper-wrapper {
-    transition-timing-function: linear;
-    /* 開始到結束速度一致 */
+/* ----- 活動集錦：網格卡片 ----- */
+.album {
+    height: 380px;
+    position: relative;
 }
-.swiper-slide {
-    letter-spacing: 0.1rem;
-    width: auto;
-    white-space: nowrap;
+.album-tag {
+    position: absolute;
+    transform: translate(108px, -50%) rotate(-3deg);
+}
+.album-imgBox {
+    height: 274px;
+}
+.album-group li:nth-child(2), .album-group li:nth-child(4) {
+    transform: rotate(1.5deg);
+}
+.album-group li:nth-child(3) {
+    transform: rotate(-1.5deg);
 }
