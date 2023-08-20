@@ -1,15 +1,18 @@
+// 外部字型和icon
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap');
 @import '../../assets/images/icofont/icofont.min.css';
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-
+// 預設
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 
+// 客製
+@import './utils/font';
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 @import './pages/index.scss';
 
-
+// 預設
 @import "../../node_modules/bootstrap";
