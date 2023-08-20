@@ -56,6 +56,12 @@
     bottom: 0;
 }
 
+/* ----- 探索更多 ----- */
+.category-group img {
+    width: 80px;
+    height: 80px;
+}
+
 /* ----- 近期活動：網格卡片群組 ----- */
 .gridCards-imgBox {
     height: 255px;
@@ -101,3 +107,5 @@
 .album-group li:nth-child(3) {
     transform: rotate(-1.5deg);
 }
+
+/* ----- FOLLOW & SUBSCRIBE ----- */
