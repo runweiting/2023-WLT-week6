@@ -10,24 +10,13 @@ import 'swiper/css/bundle';
 
 // init Swiper：宣告一個新的常數Swiper 指定在.swiper下有swiper的效果
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
+    slidesPerView: 'auto',
+    speed: 20000,
     loop: true,
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+    autoplay: {
+        delay: 1, // 過1秒才跑下一個
+      },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
   });
 
 

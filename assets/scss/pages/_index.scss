@@ -84,8 +84,13 @@
 }
 
 /* ----- swiper ----- */
-
-.swiper {
-    width: 600px;
-    height: 300px;
-  }
+/* -- Q.為什麼會停下來無法持續輪播？ -- */
+.swiper-wrapper {
+    transition-timing-function: linear;
+    /* 開始到結束速度一致 */
+}
+.swiper-slide {
+    letter-spacing: 0.1rem;
+    width: auto;
+    white-space: nowrap;
+}
