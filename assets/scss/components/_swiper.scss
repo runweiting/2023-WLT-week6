@@ -1,8 +1,9 @@
+/* -- Q.不知道!important加在這邊對不對？ -- */
 .swiper-wrapper {
-    transition-timing-function: linear;
+    transition-timing-function: linear !important;
 }
 .swiper-slide {
     letter-spacing: 0.1rem;
-    width: auto;
+    width: auto !important;
     white-space: nowrap;
 }

@@ -6,7 +6,7 @@
 // bootstrap5
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
-@import "../../node_modules/bootstrap";
+
 
 // customize css
 @import './utils/typography';
@@ -16,3 +16,5 @@
 @import './layout/footer.scss';
 
 @import './pages/index.scss';
+
+@import "../../node_modules/bootstrap";
