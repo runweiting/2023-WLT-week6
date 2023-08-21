@@ -6,11 +6,12 @@
 // bootstrap5
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
-
+@import "../../node_modules/bootstrap";
 
 // customize css
 @import './base/base';
 @import './utils/typography';
+@import './components/button';
 @import './components/swiper';
 
 @import './layout/header.scss';
@@ -18,4 +19,3 @@
 
 @import './pages/index.scss';
 
-@import "../../node_modules/bootstrap";
