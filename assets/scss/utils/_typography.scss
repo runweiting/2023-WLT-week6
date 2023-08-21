@@ -1,3 +1,4 @@
+/* ======= font-family ======= */
 .Noto-Serif-TC {
     font-family: 'Noto Serif TC' !important;
 }  
@@ -5,7 +6,7 @@
     font-family: 'Noto Sans TC' !important;
 }
 
-/*--------------------------------*/
+/* ======= font-size ======= */
 /* -- Q.為什麼要加!important才能覆蓋？ -- */
 @media (max-width: 576px) {
     .fs-sm-16 {
@@ -13,8 +14,6 @@
     }
     .fs-sm-18 {
         font-size: 18px !important;
-        letter-spacing: 1px;
-        margin-bottom: 24px !important;
     }
     .fs-sm-24 {
         font-size: 24px !important;
@@ -24,3 +23,9 @@
     }
 }
 
+/* ======= letter-spacing ======= */
+@media (max-width: 576px) {
+    .ls-sm-1 {
+        letter-spacing: 1px;
+    }
+}
