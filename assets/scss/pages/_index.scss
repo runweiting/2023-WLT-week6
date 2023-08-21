@@ -65,6 +65,10 @@
 }
 
 /* ----- 線上活動：水平卡片 ----- */
+.bg-horizontal {
+    height: 158px;
+    @include bg-cover('../assets/images/event/online.jpg');
+}
 .btn-tag.active::before {
     content: '';
     position: absolute;

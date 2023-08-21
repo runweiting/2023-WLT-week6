@@ -15445,6 +15445,14 @@ img {
 }
 
 /* ----- 線上活動：水平卡片 ----- */
+.bg-horizontal {
+  height: 158px;
+  background: url("../assets/images/event/online.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .btn-tag.active::before {
   content: "";
   position: absolute;
