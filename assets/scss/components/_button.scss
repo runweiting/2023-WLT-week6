@@ -10,3 +10,9 @@
         color: $info !important;
     }
 }
+
+@media (min-width: 576px) {
+    .border-md-3 {
+        border: 3px solid $primary !important;
+    }
+}

@@ -6,14 +6,18 @@
 }
 
 /*--------------------------------*/
+/* -- Q.為什麼要加!important才能覆蓋？ -- */
 @media (max-width: 576px) {
     .fs-sm-16 {
-        font-size: 16px;
+        font-size: 16px !important;
     }
     .fs-sm-18 {
         font-size: 18px !important;
         letter-spacing: 1px;
         margin-bottom: 24px !important;
+    }
+    .fs-sm-24 {
+        font-size: 24px !important;
     }
     .fs-sm-32 {
         font-size: 32px !important;

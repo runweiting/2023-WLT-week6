@@ -43,14 +43,25 @@
     bottom: 0;
 }
 
-/* ----- 探索更多 ----- */
+/* ----- 探索更多：類別群組 ----- */
 .category-group img {
     width: 80px;
     height: 80px;
+    @media (max-width: 576px) {
+        width: 40px;
+        height: 40px;
+    }
 }
+
 
 /* ----- 近期活動：網格卡片群組 ----- */
 .gridCards-imgBox {
+    height: 210px;
+    @media (min-width: 768px) {
+        height: 255px;
+    }
+}
+.gridCards-imgBox img {
     height: 255px;
 }
 

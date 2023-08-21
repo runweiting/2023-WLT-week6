@@ -15287,14 +15287,18 @@ img {
 }
 
 /*--------------------------------*/
+/* -- Q.為什麼要加!important才能覆蓋？ -- */
 @media (max-width: 576px) {
   .fs-sm-16 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .fs-sm-18 {
     font-size: 18px !important;
     letter-spacing: 1px;
     margin-bottom: 24px !important;
+  }
+  .fs-sm-24 {
+    font-size: 24px !important;
   }
   .fs-sm-32 {
     font-size: 32px !important;
@@ -15312,6 +15316,11 @@ img {
   color: #FBFF22 !important;
 }
 
+@media (min-width: 576px) {
+  .border-md-3 {
+    border: 3px solid #030303 !important;
+  }
+}
 /* -- Q.不知道!important加在這邊對不對？ -- */
 .swiper-wrapper {
   transition-timing-function: linear !important;
@@ -15401,14 +15410,29 @@ img {
   bottom: 0;
 }
 
-/* ----- 探索更多 ----- */
+/* ----- 探索更多：類別群組 ----- */
 .category-group img {
   width: 80px;
   height: 80px;
 }
+@media (max-width: 576px) {
+  .category-group img {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 /* ----- 近期活動：網格卡片群組 ----- */
 .gridCards-imgBox {
+  height: 210px;
+}
+@media (min-width: 768px) {
+  .gridCards-imgBox {
+    height: 255px;
+  }
+}
+
+.gridCards-imgBox img {
   height: 255px;
 }
 
