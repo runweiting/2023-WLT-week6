@@ -1,59 +1,55 @@
 <!------- 表頭 header ------->
 <div class="container">
-    <nav class="navbar navbar-expand-lg py-0">
-        <div class="container-fluid d-flex gx-0 py-3 py-md-6 border-bottom border-3 border-primary mb-4 mb-md-7">
-            <!------- logo and search  ------->
-            <div class="d-inline-flex">
-                <a class="navbar-brand py-0 me-0 d-flex align-items-center me-md-9" href="index.html">
-                    <img class="img-fluid me-5 me-lg-3" src="../assets/images/logo.png" alt="logo">
-                    <h1 class="fs-2 fw-normal me-1 d-none d-md-block">7TAO</h1>
-                    <h6 class="fw-bold d-none d-md-block">活動訂票網</h6>        
-                </a>
-                <form class="d-flex">
-                    <input class="form-control border border-2 border-primary Noto-Sans-TC px-6 py-4" type="search" style="color: #878787;" placeholder="探索活動" aria-label="Search">
-                    <button class="btn btn-primary px-5" type="submit">
-                        <i class="icofont-search-1 fs-5 text-info"></i>
-                    </button>
-                </form>
-            </div>
-            <!------- navbar-nav ------->
-            <div class="d-flex">
-                <ul class="navbar-nav flex-row mb-lg-0 btn-menu">
-                    <li class="nav-item display-8 me-4">
-                        <a class="nav-link text-primary" href="#">
-                            <i class="icofont-ui-file display-8 me-1"></i>
-                            REGISTER
-                        </a>
-                    </li>
-                    <li class="nav-item display-8">
-                        <a class="nav-link text-primary" href="#">
-                            <i class="icofont-ui-user me-1"></i>
-                            LOGIN
-                        </a>
-                    </li>
-                </ul>
-                <!------- navbar-toggler ------->
-                <button class="navbar-toggler border border-1 border-primary rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+    <nav class="navbar container-fluid d-flex justify-content-between gx-0 py-3 py-md-6 border-bottom border-3 border-primary mb-4 mb-md-7">
+        <!------- logo and search  ------->
+        <div class="d-inline-flex">
+            <a class="navbar-brand py-0 me-0 d-flex align-items-center me-lg-9" href="index.html">
+                <img class="img-fluid me-5 me-lg-3" src="../assets/images/logo.png" alt="logo">
+                <h1 class="fs-2 fw-normal me-1 d-none d-lg-block">7TAO</h1>
+                <h6 class="fw-bold d-none d-lg-block">活動訂票網</h6>        
+            </a>
+            <form class="d-flex">
+                <input class="form-control border border-2 border-primary Noto-Sans-TC lh-1 py-0 ps-3 ps-md-6" type="search" style="color: #878787;" placeholder="探索活動" aria-label="Search">
+                <button class="btn btn-primary px-sm-4" style="padding-inline: 9px;" type="submit">
+                    <i class="icofont-search-1 fs-5 lh-1 text-info"></i>
                 </button>
-                <!------- collapse navbar-nav ------->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav flex-row mb-lg-0 d-none">
-                        <li class="nav-item display-8 me-4">
-                            <a class="nav-link text-primary" href="#">
-                                <i class="icofont-ui-file display-8 me-1"></i>
-                                REGISTER
-                            </a>
-                        </li>
-                        <li class="nav-item display-8">
-                            <a class="nav-link text-primary" href="#">
-                                <i class="icofont-ui-user me-1"></i>
-                                LOGIN
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>            
+            </form>
         </div>
+        <!------- navbar-nav ------->
+        <ul class="list-unstyled mb-0 d-flex d-md-inline-flex d-none btn-menu">
+            <li class="display-8 me-6">
+                <a class="nav-link text-primary" href="#">
+                    <i class="icofont-ui-file display-8 me-1"></i>
+                    REGISTER
+                </a>
+            </li>
+            <li class="display-8">
+                <a class="nav-link text-primary" href="#">
+                    <i class="icofont-ui-user me-1"></i>
+                    LOGIN
+                </a>
+            </li>
+        </ul>
+        <!------- navbar-toggler ------->
+        <button class="navbar-toggler border border-1 border-primary rounded py-sm-3 d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>     
     </nav>
+    <!------- collapse navbar-nav ------->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav flex-column pb-3">
+            <li class="nav-item display-8">
+                <a class="nav-link text-primary py-3" href="#">
+                    <i class="icofont-ui-file display-8 me-1"></i>
+                    REGISTER
+                </a>
+            </li>
+            <li class="nav-item display-8">
+                <a class="nav-link text-primary py-3" href="#">
+                    <i class="icofont-ui-user me-1"></i>
+                    LOGIN
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>

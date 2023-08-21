@@ -1,0 +1,15 @@
+/* ----- 表頭 logo ----- */
+.navbar-brand img {
+    width: 53px;
+    @media (max-width: 576px) {
+        width: 40px;
+    }
+}
+
+/* ----- 表頭 search ----- */
+.navbar .form-control {
+    width: 284px;
+    @media (max-width: 576px) {
+        width: 168px;
+    }
+}

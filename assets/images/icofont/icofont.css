@@ -33,11 +33,6 @@ url("./fonts/icofont.woff") format("woff");
   -webkit-font-smoothing: antialiased;
 }
 
-.icofont-ui-file:before
-{
-  content: "\ec57";
-}
-
 .icofont-ui-email:before
 {
   content: "\ec56";
@@ -81,6 +76,16 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-verification-check:before
 {
   content: "\f021";
+}
+
+.icofont-ui-file:before
+{
+  content: "\ec57";
+}
+
+.icofont-navigation-menu:before
+{
+  content: "\efa2";
 }
 
 [class^="icofont-"].icofont-duotone,

@@ -1,6 +1,12 @@
 /* ----- 表頭 navbar-nav ----- */
-.nav-link {
+/* -- Q.各種方法都不成功，最後只能改!important？ -- */
+.btn-menu a:hover, .navbar-nav a:hover {
+    color: #9C9E18 !important;
+}
+/* -- Q.各種方法都不成功，無法修改color: $info？ -- */
+.navbar button {
     &:hover {
-        color: #9C9E18;
+        background-color: $primary;
+        color: $info !important;
     }
 }
