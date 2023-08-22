@@ -3,16 +3,99 @@
 .btn-menu a:hover, .navbar-nav a:hover {
     color: #9C9E18 !important;
 }
-/* -- Q.各種方法都不成功，無法修改color: $info？ -- */
-.navbar button {
-    &:hover {
-        background-color: $primary;
-        color: $info !important;
+.navbar form {
+    button:hover {
+        background-color: $info;
+        i {
+            color: $primary;
+        }
     }
 }
+/* -- Q.border顏色改$info沒有效果？ -- */
+.navbar button:hover {
+    background-color: $info;
+    border: 1px solid $info;
+}
 
-@media (min-width: 576px) {
-    .border-md-3 {
-        border: 3px solid $primary !important;
+/* ----- 探索更多 類別群組 ----- */
+.category-group li {
+    a:hover, span:hover {
+        color: $warning !important;
     }
+}
+.category-icon {
+    width: 80px;
+    height: 80px;
+    @media (max-width: 576px) {
+        width: 40px;
+        height: 40px;
+    }
+}
+.icon-1 {
+    @include svg-color($primary, '../assets/images/cate01.svg');
+}
+.icon-2 {
+    @include svg-color($primary, '../assets/images/cate02.svg');
+}
+.icon-3 {
+    @include svg-color($primary, '../assets/images/cate03.svg');
+}
+.icon-4 {
+    @include svg-color($primary, '../assets/images/cate04.svg');
+}
+.icon-5 {
+    @include svg-color($primary, '../assets/images/cate05.svg');
+}
+
+/* ----- RECENT 近期活動 ----- */
+.btn-sparkler:hover {
+    text-decoration: underline;
+} 
+.btn-status {
+    position: relative;
+    &:hover:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: $info;
+        left: -10px;
+        z-index: -1;
+    }
+}
+/* ----- ONLINE 線上活動 ----- */
+.btn-tab {
+    position: relative;
+    &:hover {
+        background-color: $primary;
+        color: $secondary;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 26px;
+        border-left: 4px solid $primary;
+        @media (min-width: 768px) {
+            height: 28px;
+        }
+    }
+    &:hover:before {
+        border-left: 4px solid $info;
+    }
+}
+.btn-online:hover {
+    color: $info !important;
+}
+
+/* ----- ALBUMS 活動集錦 ----- */
+.btn-album:hover {
+    color: $warning !important;
+}
+
+/* ----- FOLLOW & SUBSCRIBE ----- */
+.btn-subscribe:hover {
+    color: $info !important;
 }

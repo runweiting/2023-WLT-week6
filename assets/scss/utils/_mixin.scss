@@ -18,3 +18,13 @@
         height: 274px;
     }
 }
+@mixin svg-color($color, $url) {
+    background-color: $color;
+    -webkit-mask: url($url) no-repeat center center;
+    mask: url($url) no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    &:hover {
+        background-color: $warning;
+    }
+}

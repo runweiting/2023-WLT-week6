@@ -58,6 +58,11 @@
 }
 
 /* ----- 近期活動：網格卡片群組 ----- */
+@media (min-width: 576px) {
+    .border-md-3 {
+        border: 3px solid $primary !important;
+    }
+}
 .gridCards-imgBox {
     height: 210px;
     @media (min-width: 768px) {
@@ -73,30 +78,13 @@
     height: 158px;
     @include bg-cover('../assets/images/event/online.jpg');
 }
-.btn-tag.active::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 28px;
-    border-left: 4px solid $primary;
-    @media (min-width: 768px) {
-        height: 30px;
-    }
-}
-/* -- Q.偽元素的hover怎麼寫？ -- */
-.btn-group a:hover {
-    color: #fff;
-    background-color: $primary;
-    border-left: 4px solid $info;
-}
 
 /* ----- 活動集錦：網格卡片 ----- */
 .album {
     height: 380px;
     position: relative;
 }
-.album-tag {
+.album-tab {
     position: absolute;
     transform: translate(108px, -50%) rotate(-3deg);
 }
