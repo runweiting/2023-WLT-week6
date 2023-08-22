@@ -68,14 +68,20 @@
 .bg-horizontal {
     height: 158px;
     @include bg-cover('../assets/images/event/online.jpg');
+    @media (min-width: 768px) {
+        height: 100%;
+    }
 }
 .btn-tag.active::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    height: 32px;
+    height: 28px;
     border-left: 4px solid $primary;
+    @media (min-width: 768px) {
+        height: 30px;
+    }
 }
 /* -- Q.偽元素的hover怎麼寫？ -- */
 .btn-group a:hover {
