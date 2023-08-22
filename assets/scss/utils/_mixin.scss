@@ -4,4 +4,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @media (min-width: 768px) {
+        height: 100%;
+    }
+}
+@mixin bg-album {
+    @media (min-width: 768px) {
+        height: 274px;
+    }
 }

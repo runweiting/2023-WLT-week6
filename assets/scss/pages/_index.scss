@@ -68,9 +68,6 @@
 .bg-horizontal {
     height: 158px;
     @include bg-cover('../assets/images/event/online.jpg');
-    @media (min-width: 768px) {
-        height: 100%;
-    }
 }
 .btn-tag.active::before {
     content: '';
@@ -99,9 +96,29 @@
     position: absolute;
     transform: translate(108px, -50%) rotate(-3deg);
 }
-.album-imgBox {
-    height: 274px;
+.album-imgBox1 {
+    height: 267px;
+    @include bg-cover('../assets/images/album/01.jpg');
+    @include bg-album;
 }
+.album-imgBox2 {
+    height: 267px;
+    @include bg-cover('../assets/images/album/02.jpg');
+    @include bg-album;
+}
+.album-imgBox3 {
+    height: 267px;
+    @include bg-cover('../assets/images/album/03.jpg');
+    @include bg-album;
+}
+.album-imgBox4 {
+    height: 267px;
+    @include bg-cover('../assets/images/album/04.jpg');
+    @include bg-album;
+}
+
+
+
 .album-group li:nth-child(2), .album-group li:nth-child(4) {
     transform: rotate(1.5deg);
 }
