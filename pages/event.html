@@ -12,97 +12,13 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
-    <!------- 包含字幕的Carousel ------->
-    <div id="carouselExampleCaptions" class="container carousel slide mb-9 mb-md-7" data-bs-ride="carousel">
-      <h3 class="display-4 text-white fs-sm-32">19 MAY <span class="br-sm">2023</span></h3>
-      <!------- 輪播圖片組 ------->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="carousel-imgBox1">
-          </div>
-          <div class="carousel-caption d-md-block bottom-0">
-            <h6 class="fs-4 fw-bold mb-6 fs-sm-18 ls-sm-1">隔牆有耳-沒有草東的派對</h6>
-            <p class="mb-7 d-xs-none">你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
-              帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-imgBox2">
-          </div>
-          <div class="carousel-caption d-md-block bottom-0">
-            <h6 class="fs-4 fw-bold mb-6 fs-sm-18 ls-sm-1">邪典電影派對——房間</h6>
-            <p class="mb-7 d-xs-none">你有聽說過「大災難家」裡面的主角 Tommy Wiseau 製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-imgBox3">
-          </div>
-          <div class="carousel-caption d-md-block bottom-0">
-            <h6 class="fs-4 fw-bold mb-6 fs-sm-18 ls-sm-1">怪舞俱樂部</h6>
-            <p class="mb-7 d-xs-none">覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的...</p>
-          </div>
-        </div>
-      </div>
-      <!------- 上下頁控制按鈕 ------->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <!------- 探索更多 類別群組 ------->
-    <div class="container mb-9 mb-md-7">
-      <ul class="row row-cols-md-3 g-2 g-lg-6 category-group
-      list-unstyled">
-        <li class="col-4 col-md-2">
-          <a class="d-flex flex-column justify-content-center align-items-center border border-2 border-primary py-5 py-lg-8" href="#">
-            <div class="category-icon icon-1 mb-3"></div>
-            <h6 class="fs-4 fw-bold fs-sm-16">演出</h6>
-          </a>
-        </li>
-        <li class="col-4 col-md-2">
-          <a class="d-block d-flex flex-column justify-content-center align-items-center border border-2 border-primary py-5 py-lg-8" href="#">
-            <div class="category-icon icon-2 mb-3"></div>
-            <h6 class="fs-4 fw-bold fs-sm-16">聯誼</h6>
-          </a>
-        </li>
-        <li class="col-4 col-md-2">
-          <a class="d-block d-flex flex-column justify-content-center align-items-center border border-2 border-primary py-5 py-lg-8" href="#">
-            <div class="category-icon icon-3 mb-3"></div>
-            <h6 class="fs-4 fw-bold fs-sm-16">展覽</h6>
-          </a>
-        </li>
-        <li class="col-4 col-md-2">
-          <a class="d-block d-flex flex-column justify-content-center align-items-center border border-2 border-primary py-5 py-lg-8" href="#">
-            <div class="category-icon icon-4 mb-3"></div>
-            <h6 class="fs-4 fw-bold fs-sm-16">美食</h6>
-          </a>
-        </li>
-        <li class="col-4 col-md-2">
-          <a class="d-block d-flex flex-column justify-content-center align-items-center border border-2 border-primary py-5 py-lg-8" href="#">
-            <div class="category-icon icon-5 mb-3"></div>
-            <h6 class="fs-4 fw-bold fs-sm-16">戶外</h6>
-          </a>
-        </li>
-        <li class="col-4 col-md-2">
-          <a class="d-block d-flex justify-content-center align-items-center border border-2 border-primary bg-primary h-100" href="event.html">
-            <span class="display-6 fw-bold text-info lh-sm fs-sm-24">探索<br>更多</span>
-          </a>
-        </li>
-      </ul>
-    </div>
     
-    <!------- RECENT 近期活動 ------->
+    <!------- EVENT 所有活動 ------->
     <div class="container mb-7 mb-md-11">
       <!------- 活動標題 ------->
       <div class="border border-2 border-md-3 border-primary d-flex justify-content-between align-items-center px-3 px-md-7 py-3 py-md-7 mb-6 mb-md-7">
-        <h2 class="display-3 fs-sm-24">RECENT</h2>
-        <h5 class="fs-2 fw-bold fs-sm-16">近期活動</h5>
+        <h2 class="display-3 fs-sm-24">EVENT</h2>
+        <h5 class="fs-2 fw-bold fs-sm-16">所有活動</h5>
       </div>
       <!------- 活動卡片群組 ------->
       <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-6">
