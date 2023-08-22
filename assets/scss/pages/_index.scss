@@ -25,7 +25,7 @@
 }
 .carousel-imgBox1 {
     height: 350px;
-    @include bg-cover('../assets/images/event/13.jpg');
+    @include bg-cover('../images/event/13.jpg');
     @include bg-sm-carousel;
 }
 .carousel-imgBox2 {
