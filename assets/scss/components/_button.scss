@@ -32,19 +32,19 @@
     }
 }
 .icon-1 {
-    @include svg-color($primary, '../assets/images/cate01.svg');
+    @include svg-color($primary, '../images/cate01.svg');
 }
 .icon-2 {
-    @include svg-color($primary, '../assets/images/cate02.svg');
+    @include svg-color($primary, '../images/cate02.svg');
 }
 .icon-3 {
-    @include svg-color($primary, '../assets/images/cate03.svg');
+    @include svg-color($primary, '../images/cate03.svg');
 }
 .icon-4 {
-    @include svg-color($primary, '../assets/images/cate04.svg');
+    @include svg-color($primary, '../images/cate04.svg');
 }
 .icon-5 {
-    @include svg-color($primary, '../assets/images/cate05.svg');
+    @include svg-color($primary, '../images/cate05.svg');
 }
 
 /* ----- RECENT 近期活動 ----- */
