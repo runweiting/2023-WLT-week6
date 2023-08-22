@@ -8,7 +8,12 @@
         height: 100%;
     }
 }
-@mixin bg-album {
+@mixin bg-sm-carousel {
+    @media (min-width: 576px) {
+        height: 518px;
+    }
+}
+@mixin bg-md-album {
     @media (min-width: 768px) {
         height: 274px;
     }

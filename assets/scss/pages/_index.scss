@@ -23,16 +23,20 @@
         height: 350px;
     }
 }
-.carousel-imgBox img {
-    width: 1296px;
-    margin-top: -150px;
-    @media (max-width: 768px) {
-        width: 1000px;
-    }
-    @media (max-width: 576px) {
-        width: 650px;
-        margin-top: 0;
-    }
+.carousel-imgBox1 {
+    height: 350px;
+    @include bg-cover('../assets/images/event/13.jpg');
+    @include bg-sm-carousel;
+}
+.carousel-imgBox2 {
+    height: 350px;
+    @include bg-cover('../assets/images/event/01.jpg');
+    @include bg-sm-carousel;
+}
+.carousel-imgBox3 {
+    height: 350px;
+    @include bg-cover('../assets/images/event/02.jpg');
+    @include bg-sm-carousel;
 }
 .d-xs-none {
     @media (max-width: 576px) {
@@ -99,22 +103,22 @@
 .album-imgBox1 {
     height: 267px;
     @include bg-cover('../assets/images/album/01.jpg');
-    @include bg-album;
+    @include bg-md-album;
 }
 .album-imgBox2 {
     height: 267px;
     @include bg-cover('../assets/images/album/02.jpg');
-    @include bg-album;
+    @include bg-md-album;
 }
 .album-imgBox3 {
     height: 267px;
     @include bg-cover('../assets/images/album/03.jpg');
-    @include bg-album;
+    @include bg-md-album;
 }
 .album-imgBox4 {
     height: 267px;
     @include bg-cover('../assets/images/album/04.jpg');
-    @include bg-album;
+    @include bg-md-album;
 }
 .album-group li:nth-child(2), .album-group li:nth-child(4) {
     transform: rotate(1.5deg);
