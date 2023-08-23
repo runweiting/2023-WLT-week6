@@ -82,11 +82,16 @@
 /* ----- 活動集錦：網格卡片 ----- */
 .album {
     height: 380px;
-    position: relative;
 }
-.album-tab {
-    position: absolute;
-    transform: translate(108px, -50%) rotate(-3deg);
+.album-group li:nth-child(2n) {
+    .album-tab {
+        transform: rotate(-2deg);
+    }
+}
+.album-group li:nth-child(3) {
+    .album-tab {
+        transform: rotate(2deg);
+    }
 }
 .album-imgBox1 {
     height: 267px;
