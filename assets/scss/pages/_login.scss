@@ -1,0 +1,9 @@
+.loginArea {
+    height: 636px;
+    @media (min-width: 768px) {
+        height: 578px;
+    }
+    img {
+        height: 32px;
+    }
+}

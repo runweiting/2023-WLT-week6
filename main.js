@@ -1,4 +1,4 @@
-// 預設
+// bootstrap5
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
@@ -33,6 +33,14 @@ const swiper = new Swiper('.swiper', {
 
     },
   });
+
+// 每個有 .needs-validation 的 <form> 元素，觸發 submit 事件時，將該元素加入 class 'was-validated'
+$('.needs-validation').each(function(index) {
+  $(this).on('submit', function(e) {
+    e.preventDefault();
+    $(this).addClass('was-validated');
+  });
+});
 
 
 console.log("Hello world!");
