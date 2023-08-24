@@ -84,15 +84,17 @@
         border-left: 4px solid $info;
     }
     // 當 .tab-checkbox 狀態是 checked 時，同階層的 .btn-tab 加入以下樣式
-    .tab-checkbox:checked {
+    .tab-checkbox:checked + .btn-tab {
         background-color: $primary;
+        color: $secondary;
         &::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 20px;
+            top: -1px;
+            left: -4px;
+            width: 4px;
+            height: calc(100% + 2px);
+            background-color: $info;
         }
     }
 }
