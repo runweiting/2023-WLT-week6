@@ -21,8 +21,74 @@ const swiper = new Swiper('.swiper', {
 // GSAP
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
+
+// 加入 window.gsap = gsap; 設為全域物件下的屬性，讓非模塊的 js 檔案可以透過全域取得 gsap 這個物件
+window.gsap = gsap;
+
+const g_logo = document.querySelector(".g_logo");
+const g_searchbar = document.querySelector(".g_searchbar");
+const g_btnmenu = document.querySelector(".g_btnmenu");
+const g_categoryGroup = document.querySelector(".g_categoryGroup");
+const g_h6 = document.querySelector(".g_h6");
+let tl = gsap.timeline(); //create the timeline
+
+// header
+gsap.to(g_logo,{
+  duration: 1.5,
+  rotation: 360,
+  repeat: -1,
+  ease: "strong.inOut"
+})
+
+tl.to(g_searchbar, {
+  duration: 0.1,
+  delay: 2,
+  x:"+=20",
+  yoyo: true,
+  repeat: 5
+}); 
+
+tl.to(g_searchbar, {
+  duration: 0.1,
+  delay: 2,
+  x:"-=20",
+  yoyo: true,
+  repeat: 5
+}); 
+
+gsap.from(g_btnmenu,{
+  duration: 1.5,
+  delay: 3,
+  x: -200,
+  ease: "circ.inOut"
+})
+
+gsap.set(g_categoryGroup,{
+   opacity: 0 
+  })
+gsap.to(g_categoryGroup,{
+  opacity: 1,
+  duration: 1.5,
+  scrollTrigger: {
+    trigger: g_h6,
+    markers: true,
+    start: "top 70%",
+    end: "bottom 30%",
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 console.log("Hello world!");

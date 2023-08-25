@@ -1,9 +1,9 @@
-const logo = document.querySelector(".logo");
-const h5 = document.queryselector("h5");
-
-gsap.to(logo,{
-  duration: 1.5,
-  rotation: 360,
-  repeat: -1,
-  ease: "strong.inOut"
-})
+gsap.to(h5,{
+    opacity: 0;
+    duration: 1.5,
+    y: 200,
+    scrollTrigger: {
+        trigger: h5,
+        markers: true,
+    }
+  })
