@@ -2378,22 +2378,22 @@ progress {
 }
 
 .col-form-label {
-  padding-top: calc(0.375rem + 1px);
-  padding-bottom: calc(0.375rem + 1px);
+  padding-top: calc(0.375rem + 2px);
+  padding-bottom: calc(0.375rem + 2px);
   margin-bottom: 0;
   font-size: inherit;
   line-height: 1.5;
 }
 
 .col-form-label-lg {
-  padding-top: calc(0.5rem + 1px);
-  padding-bottom: calc(0.5rem + 1px);
+  padding-top: calc(0.5rem + 2px);
+  padding-bottom: calc(0.5rem + 2px);
   font-size: 1.25rem;
 }
 
 .col-form-label-sm {
-  padding-top: calc(0.25rem + 1px);
-  padding-bottom: calc(0.25rem + 1px);
+  padding-top: calc(0.25rem + 2px);
+  padding-bottom: calc(0.25rem + 2px);
   font-size: 0.875rem;
 }
 
@@ -2411,9 +2411,9 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #030303;
-  background-color: #F3F1E5;
+  background-color: transparent;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 2px solid #030303;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2433,20 +2433,20 @@ progress {
 }
 .form-control:focus {
   color: #030303;
-  background-color: #F3F1E5;
+  background-color: transparent;
   border-color: #818181;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(3, 3, 3, 0.25);
+  box-shadow: 0 0 0 0.25rem #f8f9fa;
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
 }
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: #878787;
   opacity: 1;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color: #878787;
   opacity: 1;
 }
 .form-control:disabled {
@@ -2463,7 +2463,7 @@ progress {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
-  border-inline-end-width: 1px;
+  border-inline-end-width: 2px;
   border-radius: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2485,7 +2485,7 @@ progress {
   color: #030303;
   background-color: transparent;
   border: solid transparent;
-  border-width: 1px 0;
+  border-width: 2px 0;
 }
 .form-control-plaintext:focus {
   outline: 0;
@@ -2496,7 +2496,7 @@ progress {
 }
 
 .form-control-sm {
-  min-height: calc(1.5em + 0.5rem + 2px);
+  min-height: calc(1.5em + 0.5rem + 4px);
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -2507,7 +2507,7 @@ progress {
 }
 
 .form-control-lg {
-  min-height: calc(1.5em + 1rem + 2px);
+  min-height: calc(1.5em + 1rem + 4px);
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
 }
@@ -2518,18 +2518,18 @@ progress {
 }
 
 textarea.form-control {
-  min-height: calc(1.5em + 0.75rem + 2px);
+  min-height: calc(1.5em + 0.75rem + 4px);
 }
 textarea.form-control-sm {
-  min-height: calc(1.5em + 0.5rem + 2px);
+  min-height: calc(1.5em + 0.5rem + 4px);
 }
 textarea.form-control-lg {
-  min-height: calc(1.5em + 1rem + 2px);
+  min-height: calc(1.5em + 1rem + 4px);
 }
 
 .form-control-color {
   width: 3rem;
-  height: calc(1.5em + 0.75rem + 2px);
+  height: calc(1.5em + 0.75rem + 4px);
   padding: 0.375rem;
 }
 .form-control-color:not(:disabled):not([readonly]) {
@@ -2539,10 +2539,10 @@ textarea.form-control-lg {
   border: 0 !important;
 }
 .form-control-color.form-control-sm {
-  height: calc(1.5em + 0.5rem + 2px);
+  height: calc(1.5em + 0.5rem + 4px);
 }
 .form-control-color.form-control-lg {
-  height: calc(1.5em + 1rem + 2px);
+  height: calc(1.5em + 1rem + 4px);
 }
 
 .form-select {
@@ -2554,12 +2554,12 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #030303;
-  background-color: #F3F1E5;
+  background-color: transparent;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
-  border: 1px solid #ced4da;
+  border: 2px solid #030303;
   border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
@@ -2574,7 +2574,7 @@ textarea.form-control-lg {
 .form-select:focus {
   border-color: #818181;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(3, 3, 3, 0.25);
+  box-shadow: 0 0 0 0.25rem #f8f9fa;
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 0.75rem;
@@ -2629,7 +2629,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #F3F1E5;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2649,7 +2649,7 @@ textarea.form-control-lg {
 .form-check-input:focus {
   border-color: #818181;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(3, 3, 3, 0.25);
+  box-shadow: 0 0 0 0.25rem #f8f9fa;
 }
 .form-check-input:checked {
   background-color: #030303;
@@ -2736,10 +2736,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #F3F1E5, 0 0 0 0.25rem rgba(3, 3, 3, 0.25);
+  box-shadow: 0 0 0 1px #F3F1E5, 0 0 0 0.25rem #f8f9fa;
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #F3F1E5, 0 0 0 0.25rem rgba(3, 3, 3, 0.25);
+  box-shadow: 0 0 0 1px #F3F1E5, 0 0 0 0.25rem #f8f9fa;
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -2815,7 +2815,7 @@ textarea.form-control-lg {
 .form-floating > .form-control,
 .form-floating > .form-control-plaintext,
 .form-floating > .form-select {
-  height: calc(3.5rem + 2px);
+  height: calc(3.5rem + 4px);
   line-height: 1.25;
 }
 .form-floating > label {
@@ -2830,7 +2830,7 @@ textarea.form-control-lg {
   text-overflow: ellipsis;
   white-space: nowrap;
   pointer-events: none;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   transform-origin: 0 0;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
@@ -2885,7 +2885,7 @@ textarea.form-control-lg {
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 .form-floating > .form-control-plaintext ~ label {
-  border-width: 1px 0;
+  border-width: 2px 0;
 }
 
 .input-group {
@@ -2927,7 +2927,7 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
-  border: 1px solid #ced4da;
+  border: 2px solid #030303;
 }
 
 .input-group-lg > .form-control,
@@ -2952,7 +2952,7 @@ textarea.form-control-lg {
 }
 
 .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-  margin-left: -1px;
+  margin-left: -2px;
 }
 .valid-feedback {
   display: none;
@@ -4478,20 +4478,20 @@ textarea.form-control-lg {
 
 .card {
   --bs-card-spacer-y: 1rem;
-  --bs-card-spacer-x: 1rem;
-  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-spacer-x: 0;
+  --bs-card-title-spacer-y: 0.75rem;
   --bs-card-border-width: 1px;
   --bs-card-border-color: var(--bs-border-color-translucent);
   --bs-card-border-radius: 0.375rem;
   --bs-card-box-shadow: ;
   --bs-card-inner-border-radius: calc(0.375rem - 1px);
   --bs-card-cap-padding-y: 0.5rem;
-  --bs-card-cap-padding-x: 1rem;
+  --bs-card-cap-padding-x: 0;
   --bs-card-cap-bg: none;
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: none;
+  --bs-card-bg: transparent;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -4626,7 +4626,7 @@ textarea.form-control-lg {
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
   --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23030303'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-focus-border-color: #818181;
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(3, 3, 3, 0.25);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #f8f9fa;
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
   --bs-accordion-active-color: #030303;
@@ -4748,21 +4748,21 @@ textarea.form-control-lg {
 }
 
 .pagination {
-  --bs-pagination-padding-x: 0.75rem;
-  --bs-pagination-padding-y: 0.375rem;
+  --bs-pagination-padding-x: 0.5rem;
+  --bs-pagination-padding-y: 0rem;
   --bs-pagination-font-size: 1rem;
   --bs-pagination-color: var(--bs-link-color);
-  --bs-pagination-bg: #fff;
+  --bs-pagination-bg: transparent;
   --bs-pagination-border-width: 1px;
-  --bs-pagination-border-color: #dee2e6;
+  --bs-pagination-border-color: #030303;
   --bs-pagination-border-radius: 0.375rem;
-  --bs-pagination-hover-color: var(--bs-link-hover-color);
-  --bs-pagination-hover-bg: #e9ecef;
-  --bs-pagination-hover-border-color: #dee2e6;
-  --bs-pagination-focus-color: var(--bs-link-hover-color);
-  --bs-pagination-focus-bg: #e9ecef;
-  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(3, 3, 3, 0.25);
-  --bs-pagination-active-color: #fff;
+  --bs-pagination-hover-color: #FBFF22;
+  --bs-pagination-hover-bg: #030303;
+  --bs-pagination-hover-border-color: #030303;
+  --bs-pagination-focus-color: #FBFF22;
+  --bs-pagination-focus-bg: #030303;
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem #f8f9fa;
+  --bs-pagination-active-color: #FBFF22;
   --bs-pagination-active-bg: #030303;
   --bs-pagination-active-border-color: #030303;
   --bs-pagination-disabled-color: #6c757d;
@@ -4815,7 +4815,7 @@ textarea.form-control-lg {
 }
 
 .page-item:not(:first-child) .page-link {
-  margin-left: -1px;
+  margin-left: 0.5rem;
 }
 .pagination-lg {
   --bs-pagination-padding-x: 1.5rem;
@@ -5324,7 +5324,7 @@ textarea.form-control-lg {
 }
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(3, 3, 3, 0.25);
+  box-shadow: 0 0 0 0.25rem #f8f9fa;
   opacity: 1;
 }
 .btn-close:disabled, .btn-close.disabled {
@@ -15263,10 +15263,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-* {
-  outline: 1px solid yellowgreen;
-}
-
+/* {
+    outline: 1px solid yellowgreen;
+}*/
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -15306,6 +15305,20 @@ img {
     font-size: 32px !important;
   }
 }
+@media (max-width: 768px) {
+  .fs-md-14 {
+    font-size: 14px !important;
+  }
+  .fs-md-16 {
+    font-size: 16px !important;
+  }
+  .fs-md-18 {
+    font-size: 18px !important;
+  }
+  .fs-md-24 {
+    font-size: 24px !important;
+  }
+}
 /* ======= letter-spacing ======= */
 @media (max-width: 576px) {
   .ls-sm-1 {
@@ -15318,17 +15331,172 @@ img {
   color: #9C9E18 !important;
 }
 
-/* -- Q.各種方法都不成功，無法修改color: $info？ -- */
+.navbar form button:hover {
+  background-color: #FBFF22;
+}
+.navbar form button:hover i {
+  color: #030303;
+}
+
 .navbar button:hover {
+  background-color: #FBFF22;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* ----- 探索更多 類別群組 ----- */
+.category-group li a:hover, .category-group li span:hover {
+  color: #C96464 !important;
+}
+
+.category-icon {
+  width: 80px;
+  height: 80px;
+}
+@media (max-width: 576px) {
+  .category-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.icon-1 {
   background-color: #030303;
+  -webkit-mask: url("../images/cate01.svg") no-repeat center center;
+  mask: url("../images/cate01.svg") no-repeat center center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.icon-1:hover {
+  background-color: #C96464;
+}
+
+.icon-2 {
+  background-color: #030303;
+  -webkit-mask: url("../images/cate02.svg") no-repeat center center;
+  mask: url("../images/cate02.svg") no-repeat center center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.icon-2:hover {
+  background-color: #C96464;
+}
+
+.icon-3 {
+  background-color: #030303;
+  -webkit-mask: url("../images/cate03.svg") no-repeat center center;
+  mask: url("../images/cate03.svg") no-repeat center center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.icon-3:hover {
+  background-color: #C96464;
+}
+
+.icon-4 {
+  background-color: #030303;
+  -webkit-mask: url("../images/cate04.svg") no-repeat center center;
+  mask: url("../images/cate04.svg") no-repeat center center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.icon-4:hover {
+  background-color: #C96464;
+}
+
+.icon-5 {
+  background-color: #030303;
+  -webkit-mask: url("../images/cate05.svg") no-repeat center center;
+  mask: url("../images/cate05.svg") no-repeat center center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.icon-5:hover {
+  background-color: #C96464;
+}
+
+/* ----- RECENT 近期活動 ----- */
+.btn-sparkler:hover {
+  text-decoration: underline;
+}
+
+.btn-status {
+  position: relative;
+}
+.btn-status:hover:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #FBFF22;
+  left: -10px;
+  z-index: -1;
+}
+
+/* ----- ONLINE 線上活動 ----- */
+/* ----- 活動標籤群組 (可多選) ----- */
+.tab-list .tab-checkbox {
+  display: none;
+}
+.tab-list .btn-tab {
+  height: 28px;
+  border-left: 4px solid #030303;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .tab-list .btn-tab {
+    height: 30px;
+  }
+}
+.tab-list .btn-tab:hover, .tab-list .btn-tab.active {
+  background-color: #030303;
+  border-left: 4px solid #FBFF22;
+}
+.tab-list .tab-checkbox:checked + .btn-tab {
+  background-color: #030303;
+  color: #fff;
+}
+.tab-list .tab-checkbox:checked + .btn-tab::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -4px;
+  width: 4px;
+  height: calc(100% + 2px);
+  background-color: #FBFF22;
+}
+
+.btn-online:hover {
   color: #FBFF22 !important;
 }
 
-@media (min-width: 576px) {
-  .border-md-3 {
-    border: 3px solid #030303 !important;
-  }
+/* ----- ALBUMS 活動集錦 ----- */
+.btn-album:hover {
+  color: #C96464 !important;
 }
+
+/* ----- FOLLOW & SUBSCRIBE ----- */
+.btn-subscribe:hover {
+  color: #FBFF22 !important;
+}
+
+/* ----- LOGIN 會員登入 ----- */
+/* 通過驗證樣式 */
+.was-validated .form-control:valid,
+.was-validated .form-control:valid:focus {
+  border-color: #0d6efd;
+  box-shadow: none;
+}
+
+/* 未通過驗證樣式 */
+.was-validated .form-control:invalid,
+.was-validated .form-control:invalid:focus {
+  border: 2px solid red;
+}
+
 /* -- Q.不知道!important加在這邊對不對？ -- */
 .swiper-wrapper {
   transition-timing-function: linear !important;
@@ -15338,6 +15506,11 @@ img {
   letter-spacing: 0.1rem;
   width: auto !important;
   white-space: nowrap;
+}
+
+.page-item a {
+  width: 40px;
+  height: 40px;
 }
 
 /* ----- 表頭 logo ----- */
@@ -15392,19 +15565,57 @@ img {
   }
 }
 
-.carousel-imgBox img {
-  width: 1296px;
-  margin-top: -150px;
+.carousel-imgBox1 {
+  height: 350px;
+  background: url("../images/event/13.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-@media (max-width: 768px) {
-  .carousel-imgBox img {
-    width: 1000px;
+@media (min-width: 768px) {
+  .carousel-imgBox1 {
+    height: 100%;
   }
 }
-@media (max-width: 576px) {
-  .carousel-imgBox img {
-    width: 650px;
-    margin-top: 0;
+@media (min-width: 576px) {
+  .carousel-imgBox1 {
+    height: 518px;
+  }
+}
+
+.carousel-imgBox2 {
+  height: 350px;
+  background: url("../images/event/01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .carousel-imgBox2 {
+    height: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .carousel-imgBox2 {
+    height: 518px;
+  }
+}
+
+.carousel-imgBox3 {
+  height: 350px;
+  background: url("../images/event/02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .carousel-imgBox3 {
+    height: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .carousel-imgBox3 {
+    height: 518px;
   }
 }
 
@@ -15431,6 +15642,11 @@ img {
 }
 
 /* ----- 近期活動：網格卡片群組 ----- */
+@media (min-width: 576px) {
+  .border-md-3 {
+    border: 3px solid #030303 !important;
+  }
+}
 .gridCards-imgBox {
   height: 210px;
 }
@@ -15447,41 +15663,100 @@ img {
 /* ----- 線上活動：水平卡片 ----- */
 .bg-horizontal {
   height: 158px;
-  background: url("../assets/images/event/online.jpg");
+  background: url("../images/event/online.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.btn-tag.active::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 32px;
-  border-left: 4px solid #030303;
-}
-
-/* -- Q.偽元素的hover怎麼寫？ -- */
-.btn-group a:hover {
-  color: #fff;
-  background-color: #030303;
-  border-left: 4px solid #FBFF22;
+@media (min-width: 768px) {
+  .bg-horizontal {
+    height: 100%;
+  }
 }
 
 /* ----- 活動集錦：網格卡片 ----- */
 .album {
   height: 380px;
-  position: relative;
 }
 
-.album-tag {
-  position: absolute;
-  transform: translate(108px, -50%) rotate(-3deg);
+.album-group li:nth-child(2n) .album-tab {
+  transform: rotate(-2deg);
 }
 
-.album-imgBox {
-  height: 274px;
+.album-group li:nth-child(3) .album-tab {
+  transform: rotate(2deg);
+}
+
+.album-imgBox1 {
+  height: 267px;
+  background: url("../images/album/01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .album-imgBox1 {
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .album-imgBox1 {
+    height: 274px;
+  }
+}
+
+.album-imgBox2 {
+  height: 267px;
+  background: url("../images/album/02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .album-imgBox2 {
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .album-imgBox2 {
+    height: 274px;
+  }
+}
+
+.album-imgBox3 {
+  height: 267px;
+  background: url("../images/album/03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .album-imgBox3 {
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .album-imgBox3 {
+    height: 274px;
+  }
+}
+
+.album-imgBox4 {
+  height: 267px;
+  background: url("../images/album/04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .album-imgBox4 {
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .album-imgBox4 {
+    height: 274px;
+  }
 }
 
 .album-group li:nth-child(2), .album-group li:nth-child(4) {
@@ -15493,3 +15768,27 @@ img {
 }
 
 /* ----- FOLLOW & SUBSCRIBE ----- */
+@media (min-width: 768px) {
+  .grid-title, .grid-body {
+    margin-right: -1px;
+  }
+}
+
+/* -- Q.如何在md後，兩邊自動等高？ -- */
+@media (min-width: 768px) {
+  .grid-body {
+    height: 324px;
+  }
+}
+
+.loginArea {
+  height: 636px;
+}
+@media (min-width: 768px) {
+  .loginArea {
+    height: 578px;
+  }
+}
+.loginArea img {
+  height: 32px;
+}
