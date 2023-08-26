@@ -29,8 +29,11 @@ window.gsap = gsap;
 const g_logo = document.querySelector(".g_logo");
 const g_searchbar = document.querySelector(".g_searchbar");
 const g_btnmenu = document.querySelector(".g_btnmenu");
-const g_categoryGroup = document.querySelector(".g_categoryGroup");
+const g_category = document.querySelector(".g_category");
 const g_h6 = document.querySelector(".g_h6");
+const g_recent = document.querySelector(".g_recent");
+const g_span = document.querySelector(".g_span");
+
 let tl = gsap.timeline(); //create the timeline
 
 // header
@@ -44,8 +47,8 @@ gsap.to(g_logo,{
 tl.to(g_searchbar, {
   duration: 0.1,
   delay: 2,
-  x:"+=20",
-  yoyo: true,
+  x:"+=20", // 相對值
+  yoyo: true, // 
   repeat: 5
 }); 
 
@@ -59,34 +62,40 @@ tl.to(g_searchbar, {
 
 gsap.from(g_btnmenu,{
   duration: 1.5,
-  delay: 3,
+  delay: 2,
   x: -200,
   ease: "circ.inOut"
 })
 
-gsap.set(g_categoryGroup,{
-   opacity: 0 
-  })
-gsap.to(g_categoryGroup,{
+gsap.set(g_category,{
+  opacity: 0 
+})
+gsap.to(g_category,{
   opacity: 1,
-  duration: 1.5,
+  duration: 2,
+  ease: "expo.out",
   scrollTrigger: {
     trigger: g_h6,
-    markers: true,
     start: "top 70%",
     end: "bottom 30%",
+    scrub: true
   }
 })
-
-
-
-
-
-
-
-
-
-
+gsap.set(g_recent,{
+  opacity: 0,
+})
+gsap.to(g_recent,{
+  opacity: 1,
+  duration: 2,
+  ease: "expo.out",
+  scrollTrigger: {
+    trigger: g_category,
+    markers: true,
+    start: "top 50%",
+    end: "bottom 50%",
+    scrub: true
+  }
+})
 
 
 
