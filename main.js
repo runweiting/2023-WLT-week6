@@ -29,10 +29,8 @@ window.gsap = gsap;
 const g_logo = document.querySelector(".g_logo");
 const g_searchbar = document.querySelector(".g_searchbar");
 const g_btnmenu = document.querySelector(".g_btnmenu");
-
 const g_sparkler = document.querySelector(".g_sparkler");
 const g_btnStatus = document.querySelector(".g_btnStatus");
-
 let tl = gsap.timeline(); //create the timeline
 
 gsap.to(g_logo,{
@@ -61,7 +59,6 @@ gsap.from(g_btnmenu,{
   x: -200,
   ease: "circ.inOut"
 })
-
 gsap.to(g_sparkler,{
   duration: 1.5,
   rotation: 360,
@@ -80,7 +77,6 @@ tl.to(g_btnStatus, {
   yoyo: true,
   repeat: 10,
 }); 
-
 
 
 console.log("Hello world!");
