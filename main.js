@@ -29,21 +29,18 @@ window.gsap = gsap;
 const g_logo = document.querySelector(".g_logo");
 const g_searchbar = document.querySelector(".g_searchbar");
 const g_btnmenu = document.querySelector(".g_btnmenu");
-const g_category = document.querySelector(".g_category");
-const g_h6 = document.querySelector(".g_h6");
-const g_recent = document.querySelector(".g_recent");
-const g_span = document.querySelector(".g_span");
+
+const g_sparkler = document.querySelector(".g_sparkler");
+const g_btnStatus = document.querySelector(".g_btnStatus");
 
 let tl = gsap.timeline(); //create the timeline
 
-// header
 gsap.to(g_logo,{
   duration: 1.5,
   rotation: 360,
   repeat: -1,
   ease: "strong.inOut"
 })
-
 tl.to(g_searchbar, {
   duration: 0.1,
   delay: 2,
@@ -51,7 +48,6 @@ tl.to(g_searchbar, {
   yoyo: true, // 
   repeat: 5
 }); 
-
 tl.to(g_searchbar, {
   duration: 0.1,
   delay: 2,
@@ -59,7 +55,6 @@ tl.to(g_searchbar, {
   yoyo: true,
   repeat: 5
 }); 
-
 gsap.from(g_btnmenu,{
   duration: 1.5,
   delay: 2,
@@ -67,36 +62,24 @@ gsap.from(g_btnmenu,{
   ease: "circ.inOut"
 })
 
-gsap.set(g_category,{
-  opacity: 0 
+gsap.to(g_sparkler,{
+  duration: 1.5,
+  rotation: 360,
+  repeat: -1,
+  ease: "strong.inOut"
 })
-gsap.to(g_category,{
-  opacity: 1,
-  duration: 2,
-  ease: "expo.out",
-  scrollTrigger: {
-    trigger: g_h6,
-    start: "top 70%",
-    end: "bottom 30%",
-    scrub: true
-  }
-})
-gsap.set(g_recent,{
-  opacity: 0,
-})
-gsap.to(g_recent,{
-  opacity: 1,
-  duration: 2,
-  ease: "expo.out",
-  scrollTrigger: {
-    trigger: g_category,
-    markers: true,
-    start: "top 50%",
-    end: "bottom 50%",
-    scrub: true
-  }
-})
-
+tl.to(g_btnStatus, {
+  duration: 0.1,
+  x:"+=10",
+  yoyo: true,
+  repeat: 10,
+}); 
+tl.to(g_btnStatus, {
+  duration: 0.1,
+  x:"-=10",
+  yoyo: true,
+  repeat: 10,
+}); 
 
 
 
