@@ -1,6 +1,6 @@
 <!------- 表頭 header ------->
 <div class="container">
-    <nav class="navbar container-fluid d-flex justify-content-between gx-0 py-3 py-md-6 border-bottom border-3 border-primary mb-4 mb-md-7">
+    <nav class="navbar container-fluid d-flex justify-content-between gx-0 py-3 py-md-6 border-bottom border-3 border-primary mb-4 mb-md-7 position-relative" style="z-index: 1;">
         <!------- logo and search  ------->
         <div class="d-inline-flex">
             <a class="navbar-brand py-0 me-0 d-flex align-items-center me-lg-9" href="index.html">
@@ -31,13 +31,13 @@
             </li>
         </ul>
         <!------- navbar-toggler ------->
-        <button class="navbar-toggler border border-1 border-primary rounded py-sm-3 d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler border border-1 border-primary rounded py-sm-3 d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>     
     </nav>
     <!------- collapse navbar-nav ------->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav flex-column pb-3">
+    <div class="collapse navbar-collapse container-fluid position-absolute start-0 bg-light" id="navbar-nav" style="z-index: 3; top: 83px;">
+        <ul class="navbar-nav flex-column p-3 border-bottom border-3 border-light">
             <li class="nav-item display-8">
                 <a class="nav-link text-primary py-3" href="#">
                     <i class="icofont-ui-file display-8 me-1"></i>
