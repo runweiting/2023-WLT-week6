@@ -126,9 +126,3 @@
         margin-right: -1px;
     }
 }
-/* -- Q.如何在md後，兩邊自動等高？ -- */
-.grid-body {
-    @media (min-width: 768px) {
-        height: 324px;
-    }
-}
