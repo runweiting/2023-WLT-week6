@@ -82,7 +82,7 @@
         border-left: 4px solid $primary;
         position: relative;
     }
-    .btn-tab:hover, .btn-tab.active {
+    .btn-tab:hover {
         background-color: $primary;
         border-left: 4px solid $info;
     }
