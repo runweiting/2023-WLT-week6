@@ -1,5 +1,8 @@
 /* ----- 表頭 navbar-nav ----- */
-/* -- Q.各種方法都不成功，最後只能改!important？ -- */
+/* -- 
+navbar 預設 --bs-navbar-color: #030303
+navbar-nav 預設 --bs-nav-link-color: var(--bs-navbar-color)
+-- */
 .btn-menu a:hover, .navbar-nav a:hover {
     color: #9C9E18 !important;
 }
@@ -82,6 +85,10 @@
         border-left: 4px solid $primary;
         position: relative;
     }
+    /* -- 
+navbar 預設 --bs-navbar-color: #030303
+navbar-nav 預設 --bs-nav-link-color: var(--bs-navbar-color)
+-- */
     .btn-tab:hover {
         background-color: $primary;
         border-left: 4px solid $info;
