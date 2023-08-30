@@ -19,9 +19,12 @@
 }
 
 /* ----- 探索更多 類別群組 ----- */
-.category-group li {
-    a:hover, span:hover {
+.category-group li:hover {
+    a, span {
         color: $warning !important;
+    }
+    div {
+        background-color: $warning !important;
     }
 }
 .category-icon {
