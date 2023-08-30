@@ -88,10 +88,10 @@
         }
         border-left: 4px solid $primary;
         position: relative;
-    }
-    .btn-tab:hover {
+        &:hover {
         background-color: $primary;
         border-left: 4px solid $info;
+        }
     }
     // 當 .tab-checkbox 狀態是 checked 時，同階層的 .btn-tab 加入以下樣式
     .tab-checkbox:checked + .btn-tab {
