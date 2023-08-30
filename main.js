@@ -2,9 +2,6 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-// aos
-import './assets/js/aos.js';
-
 // Swiper
 import Swiper from 'swiper/bundle';  // import Swiper bundle with all modules installed
 import 'swiper/css/bundle';          // import styles bundle
