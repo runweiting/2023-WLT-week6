@@ -1,10 +1,14 @@
+/* ----- 移除預設 form-control:focus ----- */
+.form-control:focus {
+    border-color: $warning; // 預設灰色
+    box-shadow: none; // 預設白色
+ }
+
 /* ----- 表頭 navbar-nav ----- */
-/* -- 
-navbar 預設 --bs-navbar-color: #030303
-navbar-nav 預設 --bs-nav-link-color: var(--bs-navbar-color)
--- */
 .btn-menu a:hover, .navbar-nav a:hover {
     color: #9C9E18 !important;
+    // navbar 預設 --bs-navbar-color: #030303
+    // navbar-nav 預設 --bs-nav-link-color: var(--bs-navbar-color)
 }
 .navbar form {
     button:hover {
@@ -85,10 +89,6 @@ navbar-nav 預設 --bs-nav-link-color: var(--bs-navbar-color)
         border-left: 4px solid $primary;
         position: relative;
     }
-    /* -- 
-navbar 預設 --bs-navbar-color: #030303
-navbar-nav 預設 --bs-nav-link-color: var(--bs-navbar-color)
--- */
     .btn-tab:hover {
         background-color: $primary;
         border-left: 4px solid $info;
