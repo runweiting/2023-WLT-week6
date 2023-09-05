@@ -163,10 +163,10 @@
             </div>
             <div class="card-footer border-top border-bottom border-2 border-primary py-md-3 d-flex justify-content-between align-items-center">
               <a class="btn-sparkler d-block d-flex align-items-center" href="#">
-                <img class="me-1" src="../assets/images/sparkler.png" style="width: 24px; height: 24px;" alt="icon-sparkler">
+                <img class="me-1 g_sparkler" src="../assets/images/sparkler.png" style="width: 24px; height: 24px;" alt="icon-sparkler">
                 <span class="fw-bold">聯誼</span>
               </a>
-              <a class="btn-status d-block d-flex align-items-center" href="#">
+              <a class="btn-status d-block d-flex align-items-center g_btnStatus" href="#">
                 <span class="Noto-Sans-TC fw-bold me-1">開賣中</span>
                 <i class="bi bi-chevron-double-right"></i>
               </a>
@@ -185,10 +185,10 @@
             </div>
             <div class="card-footer border-top border-bottom border-2 border-primary py-md-3 d-flex justify-content-between align-items-center">
               <a class="btn-sparkler d-block d-flex align-items-center" href="#">
-                <img class="me-1" src="../assets/images/sparkler.png" style="width: 24px; height: 24px;" alt="icon-sparkler">
+                <img class="me-1 g_sparkler" src="../assets/images/sparkler.png" style="width: 24px; height: 24px;" alt="icon-sparkler">
                 <span class="fw-bold">遊戲競賽</span>
               </a>
-              <a class="btn-status d-block d-flex align-items-center" href="#">
+              <a class="btn-status d-block d-flex align-items-center g_btnStatus" href="#">
                 <span class="Noto-Sans-TC fw-bold me-1">開賣中</span>
                 <i class="bi bi-chevron-double-right"></i>
               </a>
@@ -208,10 +208,10 @@
             </div>
             <div class="card-footer border-top border-bottom border-2 border-primary py-md-3 d-flex justify-content-between align-items-center">
               <a class="btn-sparkler d-block d-flex align-items-center" href="#">
-                <img class="me-1" src="../assets/images/sparkler.png" style="width: 24px; height: 24px;" alt="icon-sparkler">
+                <img class="me-1 g_sparkler" src="../assets/images/sparkler.png" style="width: 24px; height: 24px;" alt="icon-sparkler">
                 <span class="fw-bold">社群活動</span>
               </a>
-              <a class="btn-status d-block d-flex align-items-center" href="#">
+              <a class="btn-status d-block d-flex align-items-center g_btnStatus" href="#">
                 <span class="Noto-Sans-TC fw-bold me-1">開賣中</span>
                 <i class="bi bi-chevron-double-right"></i>
               </a>
@@ -231,10 +231,10 @@
             </div>
             <div class="card-footer border-top border-bottom border-2 border-primary py-md-3 d-flex justify-content-between align-items-center">
               <a class="btn-sparkler d-block d-flex align-items-center" href="#">
-                <img class="me-1" src="../assets/images/sparkler.png" style="width: 24px; height: 24px;" alt="icon-sparkler">
+                <img class="me-1 g_sparkler" src="../assets/images/sparkler.png" style="width: 24px; height: 24px;" alt="icon-sparkler">
                 <span class="fw-bold">展覽</span>
               </a>
-              <a class="btn-status d-block d-flex align-items-center" href="#">
+              <a class="btn-status d-block d-flex align-items-center g_btnStatus" href="#">
                 <span class="Noto-Sans-TC fw-bold me-1">開賣中</span>
                 <i class="bi bi-chevron-double-right"></i>
               </a>
@@ -389,13 +389,10 @@
 
     <%- include('./layout/footer'); -%>
     
-    <!-- script type="module" 的作用域是獨立的，導致 all.js 吃不到 main.js 引入 GSAP 的設定 -->
     <script type="module" src="../main.js"></script>
 
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="module" src="../assets/js/aos.js"></script>
+   <!-- aos -->
+    
 
   </body>
 </html>
